@@ -1,20 +1,19 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/feeedback/backend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/feeedback/backend-project-lvl2/actions)",
-  "main": "src/generate_diff_file.js",
+  "description": "[![Actions Status](https://github.com/feeedback/backend-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/feeedback/backend-project-lvl3/actions)",
+  "main": "src/loader.js",
   "scripts": {
-    "run": "node ./src/generate_diff_file.js",
     "test": "npx jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feeedback/backend-project-lvl2.git"
+    "url": "git+https://github.com/feeedback/backend-project-lvl3.git"
   },
   "author": "Alexander Rzhanitsyn",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/feeedback/backend-project-lvl2/issues"
+    "url": "https://github.com/feeedback/backend-project-lvl3/issues"
   },
   "engines": {
     "node": ">=14"
@@ -24,7 +23,14 @@
     "testEnvironment": "node",
     "transform": {}
   },
-  "homepage": "https://github.com/feeedback/backend-project-lvl2#readme",
+  "wallaby": {
+    "env": {
+      "params": {
+        "runner": "--experimental-vm-modules"
+      }
+    }
+  },
+  "homepage": "https://github.com/feeedback/backend-project-lvl3#readme",
   "dependencies": {
     "axios": "^0.21.1",
     "commander": "^7.1.0",
